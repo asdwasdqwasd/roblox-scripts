@@ -17,8 +17,8 @@ TextChatService.MessageReceived:Connect(function(msg)
 				notify("owner changed", "owner is now: "..owners[#owners])
 			    task.spawn(function()
 			        while true do
-						char.Humanoid.WalkSpeed = 0
-						char.Humanoid.JumpPower = 0
+						character.Humanoid.WalkSpeed = 0
+						character.Humanoid.JumpPower = 0
 						if v.Name == owners[#owners] then
 							character.HumanoidRootPart.Velocity = workspace[v.Name].HumanoidRootPart.Velocity * 1.5
 						else
